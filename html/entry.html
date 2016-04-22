@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<HTML>
+
+ <HEAD>
+  <TITLE>The Pingry School Book Exchange</TITLE>
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <script type="text/javascript" src="binding-bybook.js"></script>
+ </HEAD>
+
+<BODY>
+   <H1 ALIGN="center"><IMG WIDTH="250" SRC="pingry.gif"
+        ALT="The Pingry School"><br>Book Exchange</H1>
+   <DIV ALIGN="center">
+   <hr width="50%">
+    <DIV ALIGN="center">
+     <FORM METHOD="POST" ACTION="save.cgi" accept-charset=utf-8>
+<INPUT TYPE="hidden" NAME="recnum" id="recnum" VALUE="$RECNUM">
+<INPUT TYPE="hidden" NAME="course" id="course" VALUE="$COURSENUM">
+      <TABLE BORDER="0" CELLPADDING="4">
+      <TR>
+        <TD VALIGN="top"><FONT SIZE="-1"><U>Student</U></FONT>
+<BR>$FIRSTNAME $LASTNAME</TD>
+        <TD VALIGN="top"><FONT SIZE="-1"><U>Course</U></FONT>
+<BR>$COURSE</TD>
+      </TR>
+      <TR>
+        <TD VALIGN="top"><FONT SIZE="-1"><U>ISBN</U></FONT>
+<BR><INPUT NAME="isbn" id="isbn" SIZE="20" MAXLENGTH="20" TABINDEX="1" VALUE="$ISBN">
+</TD>
+        <TD VALIGN="top"><IMG SRC="ExampleISBN.png">
+</TD>
+      </TR>
+      <TR>
+        <TD VALIGN="top"><P><FONT SIZE="-1"><U>Condition</U></FONT>
+<BR><SELECT NAME="condition">
+<OPTION VALUE=""></OPTION>
+<OPTION VALUE="0">0 - Destroyed</OPTION>
+<OPTION VALUE="1">1</OPTION>
+<OPTION VALUE="2">2</OPTION>
+<OPTION VALUE="3">3</OPTION>
+<OPTION VALUE="4">4</OPTION>
+<OPTION VALUE="5">5</OPTION>
+<OPTION VALUE="6">6</OPTION>
+<OPTION VALUE="7">7</OPTION>
+<OPTION VALUE="8">8</OPTION>
+<OPTION VALUE="9">9</OPTION>
+<OPTION VALUE="10">10 - Brand New</OPTION>
+</SELECT></P>
+<P><FONT SIZE="-1"><U>Ad Status</U></FONT>
+<BR>
+<INPUT TYPE="radio" NAME="status" VALUE="A" $STATUSA>Active
+<INPUT TYPE="radio" NAME="status" VALUE="I" $STATUSI>Inactive
+</P>
+</TD>
+        <TD VALIGN="top"><P><FONT SIZE="-1"><U>Comments</U></FONT>
+<BR>
+<TEXTAREA NAME="comments" WRAP="virtual" COLS="40" ROWS="6">
+$COMMENTS
+</TEXTAREA></P>
+</TD>
+      </TR>
+      </TABLE>
+<DIV id="bookinfo"></DIV>
+      <P><INPUT TYPE="submit" VALUE="Save Listing"></P>
+    </FORM>
+     <FORM METHOD="POST" ACTION="main.cgi" accept-charset=utf-8>
+      <P><INPUT TYPE="submit" VALUE="Cancel and Return to Main Menu"></P>
+    </FORM>
+   <hr width="50%">
+   <form action="logout.cgi" accept-charset=utf-8>
+     <input type="submit" value="Logout">
+   </form>
+   </DIV>
+</BODY>
+
+</HTML>

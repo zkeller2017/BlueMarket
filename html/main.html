@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<HTML>
+
+ <HEAD>
+  <TITLE>The Pingry School Book Exchange</TITLE>
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <script type="text/javascript" src="binding-bydept.js"></script>
+  <script type="text/javascript"><!-- hide from old browsers
+function showInstructions()
+{
+  document.getElementById('instructions').style.display = 'block';
+  document.getElementById('showInstructionsLink').style.display = 'none';
+}
+//-->
+</script>
+ </HEAD>
+
+<BODY>
+   <H1 ALIGN="center"><IMG WIDTH="250" SRC="pingry.gif"
+	ALT="The Pingry School"><br>Book Exchange</H1>
+<p id="intro">The purpose of The Pingry Book Exchange is to improve the Pingry community
+by allowing students to easily buy and sell used schoolbooks from each
+other in a cost-efficient manner. It is to the discretion of the students
+to negotiate the price and decide upon the location of the exchange. This
+way, students have the flexibility to accommodate purchases to fit to their
+own schedules and locations.
+<div id="showInstructionsLink"><a href="javascript:void(0);" onClick="showInstructions();">Show instructions</a></div></p>
+   <DIV id="instructions" style="display: none;">
+<h3>Selling a Book</h3>
+<ul>
+<li>Select the department and course that your book falls under.
+<li>Click "add new listing."
+<li>Add the ISBN, condition, and a comment. An image of the book, the author(s), and title will automatically
+appear next to the listing to make it easy for the seller and buyer to
+confirm it's the right book. Once complete, click "save listing." 
+</ul>
+<h3>Buying a Book</h3>
+<ul>
+<li>Select the department and course of the book you are looking for.
+<li>Once you find a book, click on the name of the owner next to
+"E-mail" to contact them.
+</ul>
+<h3>Picking up a Book</h3>
+<ul>
+<li>Once you find a book that you want, it is up to you and the owner to
+complete the rest of the purchase. By e-mail, or any other means that you
+like, you can agree upon a price for the book and a location (whether it be
+at Pingry or somewhere else) to meet to pick it up.
+</ul>
+<h3>Deleting a Book </h3>
+<ul>
+<li>Click "Edit this book" located below your listed book 
+<li>Under Ad Status, change the ad to "inactive" and then click "save listing."  
+</ul>
+</DIV>
+   <DIV ALIGN="center">
+   <hr width="50%">
+$CONTENTS
+   <hr width="50%">
+   <form action="logout.cgi" accept-charset=utf-8>
+     <input type="submit" value="Logout">
+   </form>
+   </DIV>
+</BODY>
+
+</HTML>
